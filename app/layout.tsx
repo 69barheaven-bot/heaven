@@ -5,13 +5,26 @@ import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
-  title: "Rock Bar Heaven Akasaka | Classic Rock Bar in Akasaka, Tokyo",
-  description: siteConfig.description,
+  title: siteConfig.seoTitle,
+  description: siteConfig.ogDescription,
   keywords: siteConfig.keywords,
+  icons: {
+    icon: "/icon.svg",
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
-    title: "Rock Bar Heaven Akasaka",
-    description: siteConfig.description,
+    title: siteConfig.seoTitle,
+    description: siteConfig.ogDescription,
     type: "website",
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.nameEn,
     locale: "en_US",
     images: [
       {
@@ -24,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rock Bar Heaven Akasaka",
-    description: siteConfig.description,
+    title: siteConfig.seoTitle,
+    description: siteConfig.ogDescription,
     images: [siteConfig.heroImage],
   },
 };

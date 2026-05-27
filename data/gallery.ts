@@ -7,12 +7,12 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     src: "/images/session-night.jpg",
-    alt: "Rock Bar Heaven Akasaka live performance",
+    alt: "Classic rock live session inside Rock Bar Heaven Akasaka",
     label: "Live",
   },
   {
     src: "/images/vocal-session.jpg",
-    alt: "Session night at Rock Bar Heaven Akasaka",
+    alt: "Vocalist and band performing at Rock Bar Heaven Akasaka",
     label: "Session",
   },
   {
@@ -22,7 +22,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     src: "/images/stage-wide.jpg",
-    alt: "Stage and instruments at Rock Bar Heaven Akasaka",
+    alt: "Small underground stage with drums and amps at Rock Bar Heaven Akasaka",
     label: "Stage",
   },
   {
@@ -32,17 +32,17 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     src: "/images/counter.jpg",
-    alt: "Counter area at Rock Bar Heaven Akasaka",
+    alt: "Counter area at the basement rock bar in Akasaka",
     label: "Counter",
   },
   {
     src: "/images/sign.jpg",
-    alt: "Rock Bar Heaven sign",
+    alt: "Rock Bar Heaven Akasaka sign logo",
     label: "Sign",
   },
   {
     src: "/images/entrance.jpg",
-    alt: "Underground entrance for Rock Bar Heaven Akasaka",
+    alt: "地下入口の目印になるRock Bar Heaven Akasakaの看板",
     label: "Entrance",
   },
 ];

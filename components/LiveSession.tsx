@@ -28,9 +28,10 @@ export default function LiveSession() {
         <div className="overflow-hidden border border-white/10 bg-black">
           <Image
             src="/images/vocal-session.jpg"
-            alt="Live session at Rock Bar Heaven Akasaka"
+            alt="Band members playing a live rock session at Rock Bar Heaven Akasaka"
             width={900}
             height={620}
+            sizes="(min-width: 768px) 40vw, 100vw"
             className="h-full w-full object-cover"
           />
         </div>

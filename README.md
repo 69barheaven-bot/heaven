@@ -1,8 +1,16 @@
 # Rock Bar Heaven Akasaka 公式サイト
 
-Next.js + Tailwind CSS + TypeScript で作った、Vercel公開前提の公式サイトです。
+Rock Bar Heaven Akasaka の公式サイトです。
+Next.js + Tailwind CSS + TypeScript で作っており、GitHub + Vercel で公開しています。
 
 Web制作に慣れていない方でも更新しやすいように、営業時間・Instagram・Google Map・写真・音楽ジャンルは `data` フォルダに分けています。
+
+## 公開URL
+
+- Vercel: `https://heaven-red.vercel.app/`
+
+現在は最終公開前のため、検索エンジンに出ないよう `noindex / nofollow` を設定しています。
+正式公開時は `app/layout.tsx` の `robots` 設定と `app/robots.ts` を見直してください。
 
 ## ローカル起動方法
 
@@ -19,6 +27,22 @@ npm run dev
 ```
 
 表示された `http://localhost:3000` をブラウザで開きます。
+
+## lint / build 方法
+
+コード確認：
+
+```bash
+npm run lint
+```
+
+公開用ビルド確認：
+
+```bash
+npm run build
+```
+
+GitHubにpushすると、Vercelへ自動反映されます。
 
 ## よく触るファイル
 
@@ -72,7 +96,7 @@ instagramUrl: "https://www.instagram.com/rock_bar_heaven/",
 Vercelで公開後、正式なURLが決まったら `data/siteConfig.ts` のこの行を変更します。
 
 ```ts
-siteUrl: "https://rock-bar-heaven-akasaka.vercel.app",
+siteUrl: "https://heaven-red.vercel.app/",
 ```
 
 独自ドメインを使う場合は、ここを独自ドメインにしてください。
@@ -82,12 +106,14 @@ siteUrl: "https://rock-bar-heaven-akasaka.vercel.app",
 `data/siteConfig.ts` の2か所を変更します。
 
 ```ts
-googleMapUrl: "https://www.google.com/maps/search/?api=1&query=Rock%20Bar%20Heaven%20Akasaka",
+mapQuery: "東京都港区赤坂2-14-8 赤坂SKビルB1F",
+googleMapUrl: "https://www.google.com/maps/search/?api=1&query=東京都港区赤坂2-14-8 赤坂SKビルB1F",
 googleMapEmbedUrl: "https://www.google.com/maps?q=...&output=embed",
 ```
 
 - `googleMapUrl`: ボタンを押したときに開く地図
 - `googleMapEmbedUrl`: サイト内に表示される埋め込み地図
+- `mapQuery`: 地図検索に使う住所
 
 Google Mapで店舗を開き、「共有」からURLを取得して差し替えてください。
 
@@ -139,15 +165,14 @@ src: "/images/new-live-photo.jpg",
 
 現在使っている画像：
 
-- `public/images/hero.jpg`
-- `public/images/live-performance.jpg`
-- `public/images/live-session.jpg`
-- `public/images/interior.jpg`
-- `public/images/stage.jpg`
+- `public/images/hero-live-band.jpg`
+- `public/images/session-night.jpg`
+- `public/images/vocal-session.jpg`
+- `public/images/stage-wide.jpg`
+- `public/images/records.jpg`
 - `public/images/counter.jpg`
 - `public/images/sign.jpg`
 - `public/images/entrance.jpg`
-- `public/images/akasaka-night.jpg`
 
 ## GitHub連携方法
 
@@ -188,6 +213,9 @@ git push -u origin main
 
 ## 今後追加しやすい機能
 
+- 独自ドメイン設定
+- Google Map正式URL差し替え
+- メニュー追加
 - イベントスケジュール
 - セッション開催日の告知
 - 英語ページの追加
@@ -196,3 +224,5 @@ git push -u origin main
 - Google Analytics / Search Console
 - 店舗写真を増やしたギャラリー
 - よくある質問
+
+詳しい改善候補は `TODO.md` にまとめています。

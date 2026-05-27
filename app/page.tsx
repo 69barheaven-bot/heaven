@@ -22,17 +22,14 @@ const structuredData = {
   sameAs: [siteConfig.instagramUrl],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "2-14-8 Akasaka, Akasaka SK Building B1F",
-    addressLocality: "Minato-ku",
-    addressRegion: "Tokyo",
-    addressCountry: "JP",
+    ...siteConfig.postalAddress,
   },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "20:00",
-      closes: "05:00",
+      dayOfWeek: siteConfig.openingHours.days,
+      opens: siteConfig.openingHours.opens,
+      closes: siteConfig.openingHours.closes,
     },
   ],
   servesCuisine: "Drinks",

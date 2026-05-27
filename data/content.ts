@@ -1,5 +1,4 @@
 export const heroContent = {
-  venueLine: "Rock Bar Heaven Akasaka",
   title: "Live Classic Rock, Underground in Akasaka.",
   leadJa: "赤坂の地下に響く、70〜80年代ロック。\n聴くだけじゃない。朝までロックを楽しむ場所。",
   facts: ["B1F", "20 seats", "records", "sessions till morning", "Akasaka nights"],

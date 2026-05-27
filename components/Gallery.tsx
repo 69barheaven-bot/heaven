@@ -26,6 +26,7 @@ export default function Gallery() {
               alt={item.alt}
               width={760}
               height={920}
+              sizes="(min-width: 768px) 25vw, 50vw"
               className="h-full min-h-44 w-full object-cover transition duration-500 group-hover:scale-105"
             />
             <figcaption className="absolute bottom-0 left-0 bg-black/70 px-3 py-2 font-heading text-sm uppercase tracking-[0.12em] text-heaven-text">

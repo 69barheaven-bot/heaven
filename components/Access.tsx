@@ -22,9 +22,10 @@ export default function Access() {
           <div className="overflow-hidden border border-white/10 bg-black">
             <Image
               src={siteConfig.accessImage}
-              alt="Entrance near Rock Bar Heaven Akasaka"
+              alt="地下入口の目印になるRock Bar Heaven Akasakaの看板"
               width={900}
               height={620}
+              sizes="(min-width: 1024px) 40vw, 100vw"
               className="h-full w-full object-cover"
             />
           </div>
