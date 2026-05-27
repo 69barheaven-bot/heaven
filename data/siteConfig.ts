@@ -3,7 +3,7 @@ export const mapQuery = "東京都港区赤坂2-14-8 赤坂SKビルB1F";
 export const siteConfig = {
   nameJa: "Rock Bar Heaven",
   nameEn: "Rock Bar Heaven Akasaka",
-  siteUrl: "https://heaven-red.vercel.app/",
+  siteUrl: "https://rockbarheaven.vercel.app/",
   seoTitle: "Rock Bar Heaven Akasaka | Classic Rock Bar in Akasaka, Tokyo",
   description:
     "Rock Bar Heaven Akasaka is a small underground rock bar in Akasaka, Tokyo, for classic rock, live music, records, drinks, and late-night jam sessions.",
