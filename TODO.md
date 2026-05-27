@@ -7,14 +7,13 @@
 - 写真追加
 - メニュー追加
 - イベント情報追加
-- SEO公開設定に切り替え
 - Google Search Console登録
 - SNS用OGP画像作成
 
-## SEO公開設定に切り替える時
+## 検索非公開に戻す時
 
-- `app/layout.tsx` の `robots` を `index: true`, `follow: true` に変更
-- `app/robots.ts` の `disallow: "/"` を削除または `allow: "/"` に変更
+- `app/layout.tsx` の `robots` を `index: false`, `follow: false` に変更
+- `app/robots.ts` を `disallow: "/"` に変更
 - `data/siteConfig.ts` の `siteUrl` が正式URLになっているか確認
 - Vercelで独自ドメインが正しく設定されているか確認
 

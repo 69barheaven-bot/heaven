@@ -11,12 +11,15 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
+  alternates: {
+    canonical: siteConfig.siteUrl,
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
   },
   openGraph: {
