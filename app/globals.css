@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #0b0b0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    #0b0b0b;
+  background-size: 34px 34px;
+  color: #f2ede6;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #b11226;
+  color: #fff;
+}
+
+@layer components {
+  .cta-button {
+    @apply inline-flex min-h-12 items-center justify-center px-5 py-3 font-heading text-sm uppercase tracking-[0.12em] transition duration-300;
+    box-shadow: 0 0 0 rgba(177, 18, 38, 0);
+  }
+
+  .cta-button:hover {
+    box-shadow: 0 0 24px rgba(177, 18, 38, 0.45);
+    transform: translateY(-1px);
+  }
+
+  .tag {
+    @apply border bg-black/30 px-4 py-2 font-heading text-sm uppercase tracking-[0.1em];
+  }
+
+  .fact-chip {
+    @apply border border-white/15 bg-black/45 px-3 py-1.5 font-heading text-xs uppercase tracking-[0.12em] text-heaven-muted;
+  }
+
+  .contact-card {
+    @apply border border-white/10 bg-black/35 p-5 transition duration-300;
+  }
+
+  .contact-card:hover {
+    @apply border-heaven-red bg-black/60;
+    box-shadow: 0 0 22px rgba(177, 18, 38, 0.24);
+  }
+
+  .contact-card span {
+    @apply block font-heading text-sm uppercase tracking-[0.16em] text-heaven-steel;
+  }
+
+  .contact-card strong {
+    @apply mt-3 block text-lg text-heaven-text;
+  }
+
+  .bottom-link {
+    @apply flex min-h-12 items-center justify-center bg-heaven-red px-2 font-heading text-sm uppercase tracking-[0.1em] text-white;
+  }
+}
+
+.hero-zoom {
+  animation: heroZoom 18s ease-in-out infinite alternate;
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
