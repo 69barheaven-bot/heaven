@@ -5,6 +5,9 @@ export const siteConfig = {
   nameEn: "Rock Bar Heaven Akasaka",
   siteUrl: "https://rockbarheaven.vercel.app/",
   seoTitle: "Rock Bar Heaven Akasaka | Classic Rock Bar in Akasaka, Tokyo",
+  socialTitle: "Rock Bar Heaven Akasaka | 赤坂の地下ロックバー",
+  seoDescription:
+    "赤坂の地下にあるRock Bar Heaven Akasaka。70〜80年代ロック、生演奏、レコード、ドリンク、深夜セッションを楽しめる小さなロックバーです。",
   description:
     "Rock Bar Heaven Akasaka is a small underground rock bar in Akasaka, Tokyo, for classic rock, live music, records, drinks, and late-night jam sessions.",
   ogDescription:
@@ -38,10 +41,13 @@ export const siteConfig = {
   instagramUrl: "https://www.instagram.com/rock_bar_heaven/",
   mapQuery,
   googleMapUrl: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+  googleBusinessProfileUrl: "",
   googleMapEmbedUrl:
     "https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%B5%A4%E5%9D%822-14-8%20%E8%B5%A4%E5%9D%82SK%E3%83%93%E3%83%ABB1F&output=embed",
   heroImage: "/images/hero-live-band.jpg",
   accessImage: "/images/entrance.jpg",
+  ogImage: "/images/og/rock-bar-heaven-og.jpg",
+  ogImageAlt: "Rock Bar Heaven Akasaka underground rock bar night",
   keywords: [
     "Rock Bar Heaven Akasaka",
     "rock bar in Akasaka",
@@ -54,6 +60,9 @@ export const siteConfig = {
     "赤坂 セッション バー",
   ],
 };
+
+export const mapActionUrl =
+  siteConfig.googleBusinessProfileUrl || siteConfig.googleMapUrl;
 
 export const systemInfo = [
   { label: "Hours", value: siteConfig.hours },

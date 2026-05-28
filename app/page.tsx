@@ -16,9 +16,11 @@ const structuredData = {
   "@type": ["BarOrPub", "MusicVenue"],
   name: siteConfig.nameEn,
   alternateName: siteConfig.nameJa,
-  description: siteConfig.description,
+  description: siteConfig.seoDescription,
   telephone: siteConfig.phone,
   url: siteConfig.siteUrl,
+  image: `${siteConfig.siteUrl.replace(/\/$/, "")}${siteConfig.ogImage}`,
+  hasMap: siteConfig.googleMapUrl,
   sameAs: [siteConfig.instagramUrl],
   address: {
     "@type": "PostalAddress",

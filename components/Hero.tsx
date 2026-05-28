@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { heroContent } from "@/data/content";
-import { siteConfig } from "@/data/siteConfig";
+import { mapActionUrl, siteConfig } from "@/data/siteConfig";
 
 export default function Hero() {
   return (
@@ -45,7 +45,7 @@ export default function Hero() {
             <a className="cta-button bg-heaven-red text-white" href={siteConfig.phoneHref}>
               Call Us
             </a>
-            <a className="cta-button bg-heaven-amber text-black" href={siteConfig.googleMapUrl}>
+            <a className="cta-button bg-heaven-amber text-black" href={mapActionUrl}>
               Get Directions
             </a>
             <a className="cta-button border border-white/30 bg-black/45 text-heaven-text" href={siteConfig.instagramUrl}>

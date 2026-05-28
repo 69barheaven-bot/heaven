@@ -1,5 +1,5 @@
 import { sections } from "@/data/content";
-import { siteConfig } from "@/data/siteConfig";
+import { mapActionUrl, siteConfig } from "@/data/siteConfig";
 import Section from "./Section";
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
           <span>Phone</span>
           <strong>{siteConfig.phone}</strong>
         </a>
-        <a className="contact-card" href={siteConfig.googleMapUrl}>
+        <a className="contact-card" href={mapActionUrl}>
           <span>Google Map</span>
           <strong>Get Directions</strong>
         </a>

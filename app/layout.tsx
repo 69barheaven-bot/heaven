@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/siteConfig";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: siteConfig.seoTitle,
-  description: siteConfig.ogDescription,
+  description: siteConfig.seoDescription,
   keywords: siteConfig.keywords,
   icons: {
     icon: "/icon.svg",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: siteConfig.seoTitle,
+    title: siteConfig.socialTitle,
     description: siteConfig.ogDescription,
     type: "website",
     url: siteConfig.siteUrl,
@@ -31,18 +31,18 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: siteConfig.heroImage,
-        width: 1080,
-        height: 810,
-        alt: "Rock Bar Heaven Akasaka",
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.ogImageAlt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.seoTitle,
+    title: siteConfig.socialTitle,
     description: siteConfig.ogDescription,
-    images: [siteConfig.heroImage],
+    images: [siteConfig.ogImage],
   },
 };
 

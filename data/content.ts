@@ -32,6 +32,8 @@ export const sections = {
     eyebrow: "Gallery",
     title: "Underground Nights",
     titleJa: "地下の熱量、店内の距離感",
+    leadJa:
+      "入口の看板、地下へ降りる階段、近いカウンター、楽器のある小さなステージ。写真はこの流れで追加していくと、初めて来る人にも店の空気が伝わります。",
   },
   system: {
     eyebrow: "System",
