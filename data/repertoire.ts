@@ -1,44 +1,69 @@
+export const repertoireDayOptions = [
+  {
+    "key": "monday",
+    "label": "月",
+    "shortLabel": "M",
+    "column": "M"
+  },
+  {
+    "key": "tuesday",
+    "label": "火",
+    "shortLabel": "Tu",
+    "column": "Tu"
+  },
+  {
+    "key": "wednesday",
+    "label": "水",
+    "shortLabel": "W",
+    "column": "W"
+  },
+  {
+    "key": "thursday",
+    "label": "木",
+    "shortLabel": "Th",
+    "column": "Th"
+  },
+  {
+    "key": "friday",
+    "label": "金",
+    "shortLabel": "F",
+    "column": "F"
+  },
+  {
+    "key": "saturday",
+    "label": "土",
+    "shortLabel": "S",
+    "column": "S"
+  }
+] as const;
+
+export type RepertoireDayKey = (typeof repertoireDayOptions)[number]["key"];
+
 export type RepertoireSong = {
-  title: string;
   artist: string;
+  title: string;
+  days: RepertoireDayKey[];
   note?: string;
 };
 
-export type RepertoireDay = {
-  day: string;
-  label: string;
-  songs: RepertoireSong[];
-};
-
-export const repertoireByDay: RepertoireDay[] = [
+export const repertoireSongs: RepertoireSong[] = [
   {
-    day: "Monday",
-    label: "月曜日",
-    songs: [
-      {
-        title: "Smoke on the Water",
-        artist: "Deep Purple",
-      },
-    ],
+    "artist": "AC/DC",
+    "title": "Back In Black",
+    "days": [
+      "friday",
+      "saturday"
+    ]
   },
   {
-    day: "Wednesday",
-    label: "水曜日",
-    songs: [],
-  },
-  {
-    day: "Thursday",
-    label: "木曜日",
-    songs: [],
-  },
-  {
-    day: "Friday",
-    label: "金曜日",
-    songs: [],
-  },
-  {
-    day: "Saturday",
-    label: "土曜日",
-    songs: [],
-  },
+    "artist": "Deep Purple",
+    "title": "Smoke on the Water",
+    "days": [
+      "monday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday"
+    ]
+  }
 ];

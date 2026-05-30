@@ -52,7 +52,7 @@ export default function RepertoirePage() {
             Songs by Session Night
           </h1>
           <p className="mt-4 max-w-2xl text-lg font-semibold leading-8 text-heaven-text">
-            曜日ごとのセッション・リクエスト参考曲です。
+            セッション・リクエスト参考曲です。対応曜日を曲名の横に表示しています。
           </p>
           <p className="mt-5 max-w-3xl border-l-4 border-heaven-red bg-black/35 px-4 py-4 leading-8 text-heaven-muted">
             掲載曲はセッション・リクエスト時の参考レパートリーです。
