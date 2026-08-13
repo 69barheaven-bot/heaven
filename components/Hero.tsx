@@ -48,6 +48,9 @@ export default function Hero() {
             <a className="cta-button bg-heaven-amber text-black" href={mapActionUrl}>
               Get Directions
             </a>
+            <a className="cta-button border border-heaven-amber/70 bg-black/55 text-heaven-amber" href="/repertoire">
+              SONG LIST
+            </a>
             <a className="cta-button border border-white/30 bg-black/45 text-heaven-text" href={siteConfig.instagramUrl}>
               Instagram
             </a>

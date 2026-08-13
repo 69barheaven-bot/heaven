@@ -3,7 +3,8 @@ import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/repertoire", label: "Repertoire" },
+  { href: "/repertoire", label: "SONG LIST" },
+  { href: "/records", label: "Records" },
 ];
 
 export default function SiteNav() {
