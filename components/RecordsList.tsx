@@ -16,6 +16,14 @@ function RecordPlaceholder() {
       <div className="absolute inset-4 rounded-full border border-white/8" />
       <div className="absolute inset-8 rounded-full border border-white/6" />
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),transparent_32%,rgba(177,18,38,0.18)_58%,transparent_72%)]" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-2 text-center">
+        <span className="font-heading text-[0.55rem] uppercase tracking-[0.14em] text-heaven-amber">
+          Cover Art Unavailable
+        </span>
+        <span className="mt-1 text-[0.5rem] uppercase tracking-[0.08em] text-heaven-muted">
+          Artwork not available
+        </span>
+      </div>
     </div>
   );
 }
