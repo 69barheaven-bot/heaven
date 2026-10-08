@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import LiveSession from "@/components/LiveSession";
 import Music from "@/components/Music";
 import PrivateParty from "@/components/PrivateParty";
+import SiteNav from "@/components/SiteNav";
 import SystemInfo from "@/components/SystemInfo";
 import { artists, musicGenres } from "@/data/music";
 import { siteConfig } from "@/data/siteConfig";
@@ -51,6 +52,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <main className="min-h-screen bg-heaven-base text-heaven-text">
+        <SiteNav />
         <Hero />
         <About />
         <LiveSession />
