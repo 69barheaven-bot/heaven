@@ -212,6 +212,20 @@ Events / Repertoire / Session を追加する場合は、Next.js App Routerに�
 
 各ページのtitle / description案は `TODO.md` に残しています。
 
+## レパートリー更新方法
+
+レパートリーページの元データは `data/repertoire.xlsx` で管理しています。
+
+- 曲を追加する場合は、表の末尾に `Artist` と `Title` を入力します。
+- 対応曜日は `M`, `Tu`, `W`, `Th`, `F`, `S` 列に `x` や `1` などの印を入れます。
+- 火曜日は現在休みですが、将来使えるように `Tu` 列を用意しています。
+- 補足が必要な場合だけ `Note` に入力します。
+- 曲を削除する場合は、対象行を削除します。
+- 表示順は `data/repertoire.xlsx` の行順どおりです。
+- `npm run repertoire:sync` を実行すると、Excelから `data/repertoire.ts` が生成されます。
+- `npm run dev` と `npm run build` では自動で同期されます。
+- 編集後にGitHubへPushすると、VercelのPreview / 本番環境へ自動反映されます。
+
 ## GitHub連携方法
 
 1. GitHubで新しいリポジトリを作ります。

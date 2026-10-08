@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run repertoire:sync && next dev",
+    "build": "npm run repertoire:sync && next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "repertoire:sync": "node scripts/sync-repertoire-from-xlsx.mjs"
   },
   "dependencies": {
     "next": "16.2.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "22.15.3",
