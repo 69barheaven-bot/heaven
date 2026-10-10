@@ -13,7 +13,13 @@ export default function SystemInfo() {
             <dt className="font-heading text-sm uppercase tracking-[0.16em] text-heaven-steel">
               {item.label}
             </dt>
-            <dd className="mt-2 text-xl font-semibold text-heaven-text">{item.value}</dd>
+            <dd className="mt-2 text-xl font-semibold text-heaven-text">
+              {item.label === "Reservation" ? (
+                <a className="transition hover:text-heaven-amber" href="#reservation-contact">
+                  {item.value} <span className="text-base text-heaven-amber">→</span>
+                </a>
+              ) : item.value}
+            </dd>
           </div>
         ))}
       </div>

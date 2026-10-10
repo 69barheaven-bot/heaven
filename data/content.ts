@@ -7,12 +7,14 @@ export const heroContent = {
 export const sections = {
   about: {
     eyebrow: "About",
-    title: "Small Bar, Loud Heart",
-    titleJa: "小さな地下バーに、ロックの夜がある",
+    title: "What is Heaven?",
+    titleJa: "Heavenってどんな店？",
     bodyEn:
-      "Rock Bar Heaven Akasaka is a small underground rock bar in Akasaka, where classic rock lovers gather for live music, records, drinks, and late-night jam sessions.",
+      "Rock Bar Heaven is a rock and live music bar in Akasaka, Tokyo, built around the songs we love from the ’70s through the ’90s.\n\nCome in for a drink and enjoy the house band, or jump in and join a jam session yourself. You don’t need to be an experienced player either. Even beginners can get on stage and play together with our staff.\n\nWe don’t run on a fixed performance schedule.\nWant to hear some live music? We might start playing right away.\nFeel like talking rock all night instead? We’re happy to do that too.",
     bodyJa:
-      "赤坂の地下にある、70〜80年代ロックを生演奏で楽しめる隠れ家バー。レコード、生演奏、セッション、そして朝まで続くロックの夜。",
+      "赤坂にある、ロック＆ライブバー Heaven。\nハウスバンドを中心に、70〜90年代のロックの名曲を生演奏でお届けしています。\n\n演奏を聴きながら飲みたい人も、自分でジャムセッションしたい人も大歓迎。\n楽器初心者でも、スタッフと一緒にライブデビューできちゃいます。\n\n演奏時間は、あえて決めていません。\n「聴きたい！」と言われれば、すぐにでも演奏します。\n今日はロック談義で盛り上がりたい？ それなら、とことん語りましょう。",
+    highlightEn: "Listen, play, talk, drink.\nEvery night at Heaven is shaped by the people who walk through the door.",
+    highlightJa: "音楽を聴く人も、演る人も、語る人も。\nその日の夜を一緒につくる。それがHeavenです。",
   },
   liveSession: {
     eyebrow: "Live & Session",
@@ -32,8 +34,7 @@ export const sections = {
     eyebrow: "Gallery",
     title: "Underground Nights",
     titleJa: "地下の熱量、店内の距離感",
-    leadJa:
-      "入口の看板、地下へ降りる階段、近いカウンター、楽器のある小さなステージ。写真はこの流れで追加していくと、初めて来る人にも店の空気が伝わります。",
+    leadJa: "",
   },
   system: {
     eyebrow: "System",
@@ -55,8 +56,8 @@ export const sections = {
       "Private parties and event inquiries are welcome. A compact basement room with instruments, records, drinks, and the kind of volume that belongs after dark.",
   },
   contact: {
-    eyebrow: "Contact",
-    title: "Call, Map, Instagram",
-    titleJa: "迷ったら、地図かInstagramへ",
+    eyebrow: "Reservation & Contact",
+    title: "Reservation & Contact",
+    titleJa: "ご予約・お問い合わせ",
   },
 };

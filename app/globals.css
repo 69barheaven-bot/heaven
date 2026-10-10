@@ -72,6 +72,30 @@ a {
     @apply mt-3 block text-lg text-heaven-text;
   }
 
+  .form-field {
+    @apply grid gap-2 text-sm font-semibold text-heaven-text;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    @apply w-full border border-white/15 bg-black/35 px-4 py-3 font-body text-base font-normal text-heaven-text outline-none transition;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    @apply border-heaven-amber;
+  }
+
+  .form-field textarea {
+    @apply resize-y;
+  }
+
+  .button-primary {
+    @apply border border-heaven-amber bg-heaven-amber px-5 py-3 font-heading text-sm uppercase tracking-[0.14em] text-black transition hover:bg-transparent hover:text-heaven-amber disabled:cursor-wait disabled:opacity-60;
+  }
+
   .bottom-link {
     @apply flex min-h-12 items-center justify-center bg-heaven-red px-2 font-heading text-sm uppercase tracking-[0.1em] text-white;
   }

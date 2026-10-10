@@ -54,6 +54,9 @@ export default function Hero() {
             <a className="cta-button border border-white/30 bg-black/45 text-heaven-text" href={siteConfig.instagramUrl}>
               Instagram
             </a>
+            <a className="cta-button border border-heaven-amber/70 bg-black/55 text-heaven-amber" href="#reservation-contact">
+              BOOK / CONTACT
+            </a>
           </div>
         </div>
       </div>
