@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { sections } from "@/data/content";
-import { galleryItems, photoSlots } from "@/data/gallery";
+import { galleryItems } from "@/data/gallery";
 import Section from "./Section";
 
 export default function Gallery() {
@@ -16,16 +16,6 @@ export default function Gallery() {
       {content.leadJa ? (
         <p className="mb-7 max-w-3xl leading-8 text-heaven-muted">{content.leadJa}</p>
       ) : null}
-      <div className="mb-7 grid gap-2 sm:grid-cols-4">
-        {photoSlots.map((slot) => (
-          <div className="border border-white/10 bg-black/35 p-4" key={slot.key}>
-            <p className="font-heading text-sm uppercase tracking-[0.16em] text-heaven-amber">
-              {slot.label}
-            </p>
-            <p className="mt-2 text-sm leading-6 text-heaven-muted">{slot.memo}</p>
-          </div>
-        ))}
-      </div>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {galleryItems.map((item, index) => (
           <figure

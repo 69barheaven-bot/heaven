@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { sections } from "@/data/content";
 import { mapActionUrl, siteConfig } from "@/data/siteConfig";
 import Section from "./Section";
@@ -36,16 +35,6 @@ export default function Access() {
             <a className="cta-button bg-heaven-red text-white" href={siteConfig.phoneHref}>
               Call {siteConfig.phone}
             </a>
-          </div>
-          <div className="overflow-hidden border border-white/10 bg-black">
-            <Image
-              src={siteConfig.accessImage}
-              alt="地下入口の目印になるRock Bar Heaven Akasakaの看板"
-              width={900}
-              height={620}
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="h-full w-full object-cover"
-            />
           </div>
         </div>
         <iframe
