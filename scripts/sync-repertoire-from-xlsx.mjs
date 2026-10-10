@@ -14,6 +14,8 @@ const dayColumns = [
   { key: "saturday", label: "土", shortLabel: "S", column: "S" },
 ];
 
+const requestColumn = "For Request";
+
 function isMarked(value) {
   if (value === true) return true;
   if (value === false || value == null) return false;
@@ -51,6 +53,7 @@ const songs = rows
       artist,
       title,
       days: dayColumns.filter((day) => isMarked(row[day.column])).map((day) => day.key),
+      request: isMarked(row[requestColumn]),
       ...(note ? { note } : {}),
     };
   })
@@ -64,6 +67,7 @@ export type RepertoireSong = {
   artist: string;
   title: string;
   days: RepertoireDayKey[];
+  request: boolean;
   note?: string;
 };
 
